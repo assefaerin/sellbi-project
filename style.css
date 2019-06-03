@@ -1,84 +1,678 @@
-html, body {
-    height: 100%;
-    width: 100%;
+
+/*=================CSS RESET START===========================*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
 body {
-    margin: 0;
-    background: url(images/1.png);
+	line-height: 1;
 }
-/*=======================HEADER=========================*/
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*==================CSS RESET END=================*/
+html,body {
+    min-height: 100%;
+    position: relative;
+    color: #7f8c8c;
+    font-family: Arial, lato;
+    background-image: url("images/1.png");
+    background-repeat: inherit;
+}
+body {
+    height: 100%;
+}
 
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
+
+p {
+    padding-top: 3%;
+}
+/* ------------------------------------------------- header -------------------------------------------------------------------------------- */
 header {
     padding: 2em 15%;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    display: -webkit-flex;
-    justify-content: space-between;  
-    
-    top: 0px;
-    text-align: justify ; 
-    letter-spacing: 1px;
-    height: 8em;
-    background-size: 100%;
-}
-nav {
-    display: -webkit-flex;
-    font-family: lato, roboto;
-    font-size: 34px;
-}
-
-
-/*header {
-    width: 100%;
-    display: flex; 
-    justify-content: ;
-    height: 100%;
-    vertical-align: top;
-    letter-spacing: 1px;
-}
-*/
-/* FONT DECORATIONS */
-
-a {
-    text-decoration: none;
-    color: white;
-    font-family: lato;
-    font-size: 25px;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
     vertical-align: middle;
+    justify-content: flex-start;  
+    top: 0px;
+    text-align: center; 
+    letter-spacing: 1px;
+    min-height: 8em;
 }
 
-p {
+header .header_left {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+/* header logo sellbi */
+
+.header_logo {
+    margin-top: -45px;
+}
+
+.amazon {
+    margin-top: -20px;
+}
+
+nav {
+    display: inline-block;
+    font-family: lato, roboto;
+    font-size: 2.125em;
+    margin-top: 2%;
+}
+
+.topnav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    }
+
+    .topnav a {
+        color: white;
+        font-family: Lato;
+        font-size: 20px;
+        font-weight: normal;
+        justify-content: space-between;
+        text-align: center;
+        padding: 5px;
+        margin: 10px;
+        
+    }
+
+/* ---------------------------------------------------------- END OF THE HEADER ---------------------------------------------------------------  */
+
+/*======================RULE FOR DIVS AND SECTIONS =====================*/
+
+
+/* -------------------------------------------------------------- SECTION 1 -------------------------------------------------------------------- */
+
+.img_adaptive {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.logo_big {
+    padding: 10px 550px 10px 550px;
+    width: 100px;
+    align-items: baseline;
+}
+   
+.info {
     font-family: lato;
-    color: white;
+    font-size: 1.5625em;
+    text-align: center;
+    align-content: center;
+    color: whitesmoke;
+    margin-top: 10px;
+    margin-left: 50px;
 }
 
-.cursive {
-    font-family: cotillio, 'Dancing Script', cursive;
-}
-/*=============================Sections===============================*/
-header,
-section,
-aside,
-footer {
-  margin: 0 1.5% 24px 1.5%;
-}
-section {
-  width: 100%;
-}
-footer {
-  margin-bottom: 0;
+  .info-block {
+      text-align: justify;
+      color: whitesmoke;
+      font-size: 1.125em;
+      line-height: 1.6875em;
+  }
+
+
+.left {
+    padding-top: 0%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.left{
+.left-top {
+    position: absolute;
     float: left;
-    width: 35%;
+    left: 2%;
+    top: 7%;
 }
-.center{
-    width: 30%;
+
+.right-top {
+    position: absolute;
+    left: 29%;
+    top: 7%;
+    float: left;
 }
-.right{
+
+.right {
+    padding-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.right2 {
+    width: auto;
     float: right;
-    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.block_left { 
+    width: auto;
+    float: left;
+    color: whitesmoke;
+}
+.block_right {
+    width: auto;
+    float: right;
+    color: whitesmoke;
+}
+
+.info-left {
+    text-align: justify;
+    margin-right: 50px;
+    color: whitesmoke;
+    font-size: 1.125em;
+    line-height: 1.6875em;
+}
+
+.info-right {
+    text-align: justify;
+
+    color: whitesmoke;
+    font-size: 1.125em;
+    line-height: 1.6875em;
+}
+
+.safe {
+    margin-left: -150px;
+    margin-top: 25px;
+}
+
+.center {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.font {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: cotillio, 'Dancing Script', cursive;
+    font-size: 3.4375em;
+}
+
+.wheat {
+    top: 34%;
+    left: -20%;
+}
+
+.wheatbowl {
+    top: 25%;
+    right: 5%;
+}
+
+.buckwheat {
+    position: absolute;
+    top: 32%;
+    right: -1%;
+}
+
+.main_right {
+    width: 45%;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main_left {
+    width: 45%;
+    float: right;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section_nav {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+  
+  .questions {
+      position: absolute;
+      bottom: 4%;
+      left: 40%;
+      font-family: cotillio, 'Dancing Script', cursive;
+      color: whitesmoke;
+      font-size: 2em;
+  }
+  
+  .question_button {
+      top: 10px;
+  }
+
+  .promo_box {
+      left: 33%;
+  }
+
+  .footer {
+      position: absolute;
+  }
+  
+  .footer_border {
+      width: 100%;
+      position: relative;
+      top: 385px;
+      right: 0px;
+      bottom: 0px;
+      background-color: transparent;
+  }
+  
+  .footer_background {
+      width: 100%;
+      bottom: 0px;
+  }
+  
+  .about {
+      position: absolute;
+      bottom: 15%;
+      left: 35%;
+      font-size: 1.375em;
+      letter-spacing: 1px;
+      line-height: 1.6875em;
+  }
+
+  .logo {
+     position: absolute;
+     bottom: 20%;
+     left: 20%;
+  }
+
+  .amazon_footer {
+      position: absolute;
+      bottom: 15%;
+      left: 53%;
+  }
+
+  .social {
+      position: absolute;
+      bottom: 25%;
+      left: 50%;
+  }
+  
+  .decorations-left {
+      position: absolute;
+      display: block;
+      max-width: 100%;
+      height: auto;
+  }
+
+  .decorations-right {
+      position: absolute;
+      display: block;
+      max-width: 100%;
+      height: auto;
+      float: right;
+  }
+
+  .decorations-center {
+      position: absolute;
+      display: block;
+      max-width: 100%;
+      height: auto;
+  }
+
+  .flour {
+      padding-top: 9%;
+  }
+
+  .flour-1 {
+      left: 80%;
+  }
+
+  .flour-2 {
+      top: 17.5%;
+  }
+
+  .pepper {
+      left: 75%;
+  }
+
+  .garlic {
+      left: 25%;
+  }
+
+  .cardamone {
+      right: 87%;
+  }
+    
+/*=========================END OF CLASSES========================*/
+
+section {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      border-spacing: 0px;
+      border-collapse: collapse;
+    }
+
+button {
+    color: white;
+    font-family: lato;
+    font-size: 20px;
+    background-color: transparent;
+    padding: 10px 45px 10px 45px;
+    margin: 25px 10px 25px 10px;
+    border: 3px solid white;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+button:hover {
+    background-color: #f0a93e;
+}
+
+.button-1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button-2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 25px;
+}
+
+section a {
+      margin-right: 350px;
+      margin-top: 5px;
+      font-size: 20px;
+      color: #7f8c8c;
+      font-family: "OpenSans", "Arial";
+}
+
+h1 {
+      text-align: center;
+      font-family: cotillio, 'Dancing Script', cursive;
+      margin-bottom: 20px;
+}
+
+ footer {
+      bottom: 0px;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      justify-content: space-between;
+      background-size: 100%;
+      background-repeat: repeat;
+      align-items: center; 
+}
+
+/*=================SLIDER RULES=========================*/
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/*================================MEDIA================================*/
+
+@media screen and (max-width: 1000px) and (orientation: landscape) {
+    
+    header {
+        display: grid;
+        align-items: center;
+        justify-content: .center;
+        font-size: 6px;
+    }
+
+    .amazon {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    }
+
+    .header_left {
+        float: left;
+    }
+} 
+ @media (min-height: 680px), screen and (orientation: portrait) {
+
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+  .header_logo {
+      padding-top: 35px;
+  }
+
+  .font {
+      font-size: 1.5625em;
+      padding-left: auto;
+      padding-right: auto;
+  }
+
+  .info {
+    font-size: 1.25em;
+  }
+
+  button {
+    color: white;
+    font-family: lato;
+    font-size: 0.875em;
+    background-color: transparent;
+    padding: 7px 55px 7px 55px;
+    margin: 20px 10px 20px 10px;
+    border: 3px solid white;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+
+  p {
+      text-align: center;
+  }
+
+  .left-top, .left, .right, .right-top, p, .font, div, .info, .center {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      align-content: center;
+      color: whitesmoke;
+  }
+
+  .frame, .flour, .flour-1, .right-top {
+      display: none;
+  }
+/*
+    .pepper {
+        position: absolute;
+    }
+*/
+    section {
+        column-width: 15em;
+      }
+
+ }
+
+ .wheatbowl {
+ position: relative;
+ display: block;
+ max-width: 100%;
+ height: auto;
+ }
+
+
+ /* ==================ADAPTIVE IMAGE====================== */
+
+/*
+ position: relative;
+ display: block;
+ max-width: 100%;
+ height: auto;
+*/
