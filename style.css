@@ -153,6 +153,11 @@ nav {
       font-size: 1.125em;
       line-height: 1.6875em;
   }
+
+   .perfect {
+       margin-left: 25%;
+   }
+
 .left {
     padding-top: 10%;
     padding-bottom: 0;
@@ -257,7 +262,7 @@ nav {
   
   .questions {
       position: absolute;
-      bottom: 4%;
+      bottom: 6%;
       left: 40%;
       font-family: cotillio, 'Dancing Script', cursive;
       color: whitesmoke;
@@ -296,6 +301,7 @@ nav {
       letter-spacing: 1px;
       line-height: 1.6875em;
   }
+
   .logo {
      position: absolute;
      bottom: 20%;
@@ -304,7 +310,7 @@ nav {
   .amazon_footer {
       position: absolute;
       bottom: 15%;
-      left: 53%;
+      left: 54%;
   }
   .social {
       position: absolute;
@@ -438,22 +444,22 @@ h1 {
 
 .icon-twi {
     position: absolute;
-    top: 150px;
-    left: 53%;
+    top: 165px;
+    left: 54.5%;
     background-position: -210px 0px;
 }
 
 .icon-fb {
     position: absolute;
-    top: 150px;
-    left: 58%;
+    top: 165px;
+    left: 58.5%;
     background-position: -140px 0px;
 }
 
 .icon-insta {
     position: absolute;
-    top: 150px;
-    left: 63%;
+    top: 165px;
+    left: 62.5%;
     background-position: 0px 0px;
 }
 
@@ -666,12 +672,72 @@ h1 {
    display: none;   
 }
 
+.buckwheat {
+    opacity: 0.3;
+}
+
+
 .infoblock {
     display: flex;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
+
+
+.questions {
+    position: absolute;
+    margin-right: auto;
+    margin-left: auto;
+    top: 93%;
+    left: 30%;
+    bottom: 1%;
+    font-family: cotillio, 'Dancing Script', cursive;
+    color: whitesmoke;
+    font-size: 2em;
+}
+
+.promo_box {
+    position: relative;
+    top: 93%;
+    left: 10%;
+}
+/*======================SOCIAL BUTTONS===================================*/
+
+
+.icon-twi {
+    position: absolute;
+    top: 170px;
+    left: 62%;
+    background-position: -210px 0px;
+}
+
+.icon-fb {
+    position: absolute;
+    top: 170px;
+    left: 71%;
+    background-position: -140px 0px;
+}
+
+.icon-insta {
+    position: absolute;
+    top: 170px;
+    left: 80%;
+    background-position: 0px 0px;
+}
+
+.amazon_footer {
+    position: absolute;
+    bottom: 17%;
+    left: 62%;
+  }
+
+  .about {
+    position: absolute;
+    bottom: 15%;
+    left: 39%;
+}
+
 
 
 } 
@@ -866,8 +932,8 @@ h1 {
 
         .amazon_footer {
           position: absolute;
-          bottom: 3.5%;
-         left: 30%;
+          bottom: 3.2%;
+          left: 32%;
         }
 
         .social {
@@ -879,7 +945,7 @@ h1 {
        .about {
       position: absolute;
       bottom: 85px;
-      left: 35%;
+      left: 37%;
       font-size: 1.375em;
       letter-spacing: 1px;
       line-height: 1.6875em;
@@ -895,10 +961,11 @@ h1 {
         }
 
   .questions {
-    position: absolute;
+    position: relative;
     margin-right: auto;
     margin-left: auto;
-    left: 120px;
+    top: 80%;
+    left: 10%;
     bottom: 1%;
     font-family: cotillio, 'Dancing Script', cursive;
     color: whitesmoke;
@@ -907,7 +974,7 @@ h1 {
 
 .promo_box {
     position: absolute;
-    top: 92%;
+    top: 94%;
     left: 0.625em;
 }
 
