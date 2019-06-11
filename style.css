@@ -637,8 +637,24 @@ h1 {
 }
 
   
-.desktop, .flour-2  {
+.smartphone, .flour-2  {
     display: none;
+}
+
+.desktop {
+    margin-left: 15px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.flour-1 {
+    position: absolute;
+    left: 15%;
+    opacity: 0.3;
+}
+
+.pepper {
+   display: none;   
 }
 
 
