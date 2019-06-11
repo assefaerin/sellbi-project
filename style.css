@@ -371,20 +371,24 @@ button {
     border-radius: 5px 5px 5px 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
+
 button:hover {
     background-color: #f0a93e;
 }
+
 .button-1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
+
 .button-2 {
     display: block;
     margin-left: auto;
     margin-right: auto;
     top: 25px;
 }
+
 section a {
       margin-right: 350px;
       margin-top: 5px;
@@ -550,7 +554,7 @@ h1 {
 }
 
 
-@media screen and (max-width: 26.25em) and (orientation: landscape) {
+@media screen and (max-width: 40em) and (orientation: landscape) {
 
     header {
         display: flex;
@@ -585,6 +589,18 @@ h1 {
         float: left;
     }
 
+    button {
+        color: white;
+        font-family: lato;
+        font-size: 0.875em;
+        background-color: transparent;
+        padding: 7px 45px 7px 45px;
+        margin: 20px 10px 20px 10px;
+        border: 3px solid white;
+        border-radius: 5px 5px 5px 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      }
+
 
  .left, .right, .right-top, p, div, .center {
     margin-left: auto;
@@ -593,6 +609,31 @@ h1 {
     text-align: center;
     align-content: center;
     color: whitesmoke;
+}
+
+.font, .font-1 {
+    font-size: 1.875em;
+    margin-top: 32%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info {
+    font-family: lato;
+    font-size: 1.0625em;
+    margin-top: 10%;
+    text-align: center;
+    align-content: center;
+    color: whitesmoke;
+}
+
+.bowl {
+    position: relative;
+    display: block;
+    margin-top: 26%;
+    margin-left: 15%; 
+    max-width: 90%;
+    height: auto;
 }
 
   
@@ -642,7 +683,6 @@ h1 {
         align-items: center;    
     }
 
-    
   .header_logo {
       padding-top: 35px;
   }
@@ -712,6 +752,7 @@ h1 {
     background-color: #252525;
     border-radius: 50%;
   }
+
   .icon {
       display: inline-block;
       width: 50px;
