@@ -611,7 +611,11 @@ h1 {
     color: whitesmoke;
 }
 
-.font, .font-1 {
+.block-left {
+    margin-left: 25%;
+}
+
+.font-1 {
     font-size: 1.875em;
     margin-top: 32%;
     margin-left: auto;
@@ -621,7 +625,7 @@ h1 {
 .info {
     font-family: lato;
     font-size: 1.0625em;
-    margin-top: 10%;
+    margin-top: 3%;
     text-align: center;
     align-content: center;
     color: whitesmoke;
@@ -649,12 +653,24 @@ h1 {
 
 .flour-1 {
     position: absolute;
-    left: 15%;
+    top: 10%;
+    left: 1%;
+    opacity: 0.3;
+}
+
+.wheat {
     opacity: 0.3;
 }
 
 .pepper {
    display: none;   
+}
+
+.infoblock {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 
@@ -908,4 +924,3 @@ h1 {
  max-width: 100%;
  height: auto;
 */
-
